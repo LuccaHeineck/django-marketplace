@@ -1,15 +1,7 @@
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <script src="https://tailwindcss.com"></script>
+{% extends "core/base.html" %}
 
-        <title>Marketplace</title>
-    </head>
-<body>
-    <div class="px-6 py-6">
-        <h1>The front page</h1>
-    </div>
-</body>
-</html>
+{% block title %}Welcome{% endblock title %}
+
+{% block content %}
+    <h1>The front page</h1>
+{% endblock %}
