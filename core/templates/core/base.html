@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <script src="https://cdn.tailwindcss.com"></script>
 
         <title>{% block title %}{% endblock  %} | Marketplace</title>
@@ -12,10 +12,10 @@
         <a href="/" class="text-xl font-semibold">Marketplace</a>
 
         <div class="space-x-6">
-            <a href="#" class="text-lg font-semibold hover:text-gray-500">New item</a>
-            <a href="#" class="text-lg font-semibold hover:text-gray-500">Browse</a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">Novo ítem</a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">Procurar</a>
 
-            <a href="#" class="px-6 py-3 text-xl font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Sign up</a>
+            <a href="#" class="px-6 py-3 text-xl font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Cadastrar</a>
             <a href="#" class="px-6 py-3 text-xl font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700">Login</a>
         </div>
     </nav>
@@ -35,7 +35,7 @@
             <h3 class="mb-5 font-semibold text-gray-400">Menu</h3>
             <ul class="space-y-2">
                 <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">About</a></li>
-                <li><a href="{% url 'contact' %}" class="text-lg text-teal-500 hover:text-teal-700">Contact</a></li>
+                <li><a href="{% url 'core:contact' %}" class="text-lg text-teal-500 hover:text-teal-700">Contact</a></li>
                 <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Privacy policy</a></li>
                 <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Terms of use</a></li>
             </ul>
