@@ -14,5 +14,5 @@ def detail(request, pk):
     })
 
     # ideia tela erro 404
-#    item = get_object_or_404(Item, pk=pk)
+    # item = get_object_or_404(Item, pk=pk)
 
