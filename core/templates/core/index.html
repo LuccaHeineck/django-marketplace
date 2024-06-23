@@ -3,8 +3,8 @@
 {% block title %}Bem-vindo{% endblock title %} 
 
 {% block content %}
-<div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
-  <h2 class="mb-12 text-2xl text-center">Novos itens</h2>
+<div class="mt-6 px-32 py-12 bg-gray-100 rounded-xl">
+  <h2 class="mb-12 text-2xl text-center">Novos ítens</h2>
   <div class="grid grid-cols-3 gap-3">
     {% for item in items %}
     <div>
@@ -12,7 +12,6 @@
         <div>
           <img
             src="{{item.image.url}}"
-            pprint(item.image.url)
             alt="{{image.name}}"
             class="rounded-t-xl"
           />
@@ -27,6 +26,7 @@
     {% endfor %}
   </div>
 </div>
+
 
 <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
   <h2 class="mb-12 text-2xl text-center">Categorias</h2>
