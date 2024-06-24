@@ -4,8 +4,8 @@
 
 {% block content %}
 <div class="mt-6 px-32 py-12 bg-gray-100 rounded-xl">
-  <h2 class="mb-12 text-2xl text-center">Novos ítens</h2>
-  <div class="grid grid-cols-3 gap-3">
+  <h2 class="mb-12 text-2xl text-center">Novos itens</h2>
+  <div class="grid grid-cols-5 gap-3">
     {% for item in items %}
     <div>
       <a href="{% url 'item:detail' item.id %}">
