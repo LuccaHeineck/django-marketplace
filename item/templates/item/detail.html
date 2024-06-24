@@ -8,5 +8,16 @@
             <img src="{{item.image.url}}" alt="{{item.image.url}}" class="rounded-xl">
 
         </div>
+
+        <div class="col-span-2 p-6 bg-gray-100 rounded-xl">
+            <h1 class="mb-6 text-3xl">{{ item.name }}</h1>
+            <p class="text-gray-500"><strong>Preço: R$</strong>{{ item.price }}</p>
+            <p class="text-gray-500"><strong>Vendedor: </strong>{{ item.created_by.username }}</p>
+
+            <p class="text-gray-700">
+                <strong class="text-gray-500">Descrição: </strong><br>
+                {{ item.description }}
+            </p>
+        </div>
     </div>
 {% endblock %}
